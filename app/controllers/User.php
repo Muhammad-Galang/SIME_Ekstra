@@ -24,7 +24,7 @@ class User extends Controller{
 	public function tambah()
 	{
 		if($this->model('UserModel')->TambahDataUser($_POST) > 0){
-			header('Location: ' . BASEURL . '/user');
+			header('Location: ' . BASEURL . '/User');
 			exit;
 		}
 	}
@@ -32,7 +32,7 @@ class User extends Controller{
 	public function hapus($id)
 	{
 		if( $this->model('UserModel')->HapusDataUser($id) > 0){
-			header('Location: ' . BASEURL . '/user');
+			header('Location: ' . BASEURL . '/User');
 			exit;
 		}
 	}

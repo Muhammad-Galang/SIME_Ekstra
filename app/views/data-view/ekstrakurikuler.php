@@ -5,7 +5,7 @@
     <div class="x_title">
       <h2>Responsive example<small>Users</small></h2>
       <ul class="nav navbar-right panel_toolbox">
-        <li<a><button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#FormModal">
+        <li><a><button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#FormModal">
           Tambah Data
         </button></a>
       </li>

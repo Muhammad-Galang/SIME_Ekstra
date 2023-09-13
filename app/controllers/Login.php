@@ -7,7 +7,7 @@ class Login extends Controller{
 	public function index()
 	{
 		$data['title'] = 'Halaman Login';
-		$this->view('landing-page/login', $data);
+		$this->view('landing-page/Login', $data);
 	}
 
 	public function ProsesLogin() {
@@ -18,7 +18,7 @@ class Login extends Controller{
 			$_SESSION['Password'] = $row['password'];
 			$_SESSION['session_login'] = 'sudah_login'; 
 
-			header('location: '. BASEURL . '/user');
+			header('location: '. BASEURL . '/User');
 		} else {
 			Flasher::setMessage('Username / Password','salah.','danger');
 			header('location: '. BASEURL . '/login');
@@ -30,7 +30,7 @@ class Login extends Controller{
 	public function LogOut()
 	{
 		session_destroy();
-		header('location: ' . BASEURL . '/home');
+		header('location: ' . BASEURL . '/Home');
 	}	
 }
 
