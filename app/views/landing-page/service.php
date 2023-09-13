@@ -89,23 +89,23 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav  ">
-                <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Home </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
-                </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="service.html">Services <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="<?=BASEURL; ?>/home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="team.html"> Team </a>
+                  <a class="nav-link" href="<?= BASEURL; ?>/about"> About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
+                  <a class="nav-link" href="<?= BASEURL; ?>/service">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="<?= BASEURL; ?>/team"> Team </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="<?= BASEURL; ?>/contact">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="<?= BASEURL; ?>/login">
                     <i class="fa fa-user" aria-hidden="true"></i>
                     <span>
                       Login

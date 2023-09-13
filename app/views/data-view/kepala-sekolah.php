@@ -32,9 +32,9 @@
                   <td><?= $keps['Id_Pengguna']; ?></td>
                   <td><?= $keps['Tanggal_Terdata']; ?></td>
                   <td>
-                    <a href="<?=BASEURL; ?>/KepalaSekolah/hapus/<?=$keps['Id_Kepala']; ?>" class="badge-danger  float-end ml-1" onclick="return confirm('Yakin?');"><button type="button" class="btn btn-danger">Hapus</button></a>
+                    <a href="<?=BASEURL; ?>/KepalaSekolah/hapus/<?=$keps['Id_Kepala']; ?>" onclick="return confirm('yakin?')";><div class="btn btn-danger fa fa-trash "></div></a>
 
-                    <a href="<?=BASEURL; ?>/kepalasekolah/edit/<?=$keps['Id_Kepala']; ?>" class="badge-warning  float-end ml-1"><button type="button" class="btn btn-warning">Edit</button></a>
+                    <a href="<?=BASEURL; ?>/KepalaSekolah/edit/<?=$keps['Id_Kepala']; ?>" data-bs-toggle="modal" data-bs-target="#FormModal" class="btn btn-warning fa fa-edit tampilModalUbah"></a> 
                   </td>
                 </tr>
               <?php endforeach; ?>
@@ -53,8 +53,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="JudulModal">Tambah Data</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h1 class="modal-title fs-5" id="FormModalLabel">Tambah Data</h1>
       </div>
       <div class="modal-body">
         <!-- Header-Body -->
@@ -80,3 +79,5 @@
 </div>
 </div>
 
+<script src="<?= BASEURL;?>/data-view/js/kepsek-update.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -15,7 +15,7 @@
   <title>Finter</title>
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="<?= BASEURL; ?>/landing-page/css/bootstrap.css" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -24,18 +24,18 @@
   <!-- nice select -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
   <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="<?= BASEURL; ?>/landing-page/css/font-awesome.min.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="<?= BASEURL; ?>/landing-page/css/style.css" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="<?= BASEURL; ?>/landing-page/css/responsive.css" rel="stylesheet" />
 </head>
 
 <body class="sub_page">
   <div class="hero_area">
     <div class="hero_bg_box">
-      <img src="images/hero-bg.jpg" alt="">
+      <img src="<?= BASEURL; ?>landing-page/images/hero-bg.jpg" alt="">
     </div>
     <!-- header section strats -->
     <header class="header_section">
@@ -89,23 +89,23 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav  ">
-                <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Home </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html">Services</a>
-                </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="team.html"> Team <span class="sr-only">(current)</span> </a>
+                  <a class="nav-link" href="<?=BASEURL; ?>/home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
+                  <a class="nav-link" href="<?= BASEURL; ?>/about"> About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="<?= BASEURL; ?>/service">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="<?= BASEURL; ?>/team"> Team </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="<?= BASEURL; ?>/contact">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="<?= BASEURL; ?>/login">
                     <i class="fa fa-user" aria-hidden="true"></i>
                     <span>
                       Login
@@ -143,7 +143,7 @@
         <div class="col-md-4 col-sm-6 mx-auto">
           <div class="box">
             <div class="img-box">
-              <img src="images/t1.jpg" alt="">
+              <img src="<?= BASEURL; ?>/landing-page/images/t1.jpg" alt="">
             </div>
             <div class="detail-box">
               <h5>
@@ -158,7 +158,7 @@
         <div class="col-md-4 col-sm-6 mx-auto">
           <div class="box">
             <div class="img-box">
-              <img src="images/t2.jpg" alt="">
+              <img src="<?= BASEURL; ?>/landing-page/images/t2.jpg" alt="">
             </div>
             <div class="detail-box">
               <h5>
