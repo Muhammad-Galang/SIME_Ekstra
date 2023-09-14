@@ -55,8 +55,8 @@
                 <td><?= $dtUser['Alamat']; ?></td>
                 <td><?= $dtUser['Kata_Sandi']; ?></td>
                 <td>
-                  <a href="<?=BASEURL; ?>/user/hapus/<?=$dtUser['Id_pengguna']; ?>" onclick="return confirm('yakin?')";><div class="btn btn-danger fa fa-trash "></div></a> 
-                  <a href="<?=BASEURL; ?>/user/edit/<?=$dtUser['Id_pengguna']; ?>" onclick="return confirm('yakin?')";><div class="btn btn-warning fa fa-edit (alias) "></div></a>
+                  <a href="<?=BASEURL; ?>/User/hapus/<?=$dtUser['Id_pengguna']; ?>" onclick="return confirm('yakin?')";><div class="btn btn-danger fa fa-trash "></div></a> 
+                  <a href="<?=BASEURL; ?>/User/edit/<?=$dtUser['Id_pengguna']; ?>" onclick="return confirm('yakin?')";><div class="btn btn-warning fa fa-edit (alias) "></div></a>
                 </td>
               </tr>
             <?php endforeach; ?>
@@ -79,7 +79,7 @@
       </div>
       <div class="modal-body">
         <!-- Header-Body -->
-        <form action="<?=BASEURL; ?>/user/tambah" method="POST" enctype="multipart/form-data">
+        <form action="<?=BASEURL; ?>/User/tambah" method="POST" enctype="multipart/form-data">
 
           <div class="form-group">
             <label for="nama_pengguna">NAMA PENGGUNA</label>

@@ -55,11 +55,10 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="JudulModal">Tambah Data</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <!-- Header-Body -->
-        <form action="<?=BASEURL; ?>/pembimbing/tambah" method="POST">
+        <form action="<?=BASEURL; ?>/Pembimbing/tambah" method="POST">
 
           <div class="form-group">
             <label for="id_pengguna">ID PENGGUNA</label>

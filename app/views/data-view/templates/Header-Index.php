@@ -34,7 +34,7 @@
 	<div class="container body">
 		<div class="main_container">
 			<div class="col-md-3 left_col">
-				<div class="left_col scroll-view">
+				<div class="left_col scroll-view" >
 					<div class="navbar nav_title" style="border: 0;">
 						<a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
 					</div>
@@ -59,12 +59,12 @@
 						<div class="menu_section">
 							<h3>General</h3>
 							<ul class="nav side-menu">
-								<li><a href="<?=BASEURL; ?>/user"><i class="fa fa-home"></i> PENGGUNA <span class=""></span></a></li>
-								<li><a href="<?=BASEURL; ?>/pembimbing"><i class="fa fa-edit"></i> GURU PEMBIMBING <span class=""></span></a></li>
+								<li><a href="<?=BASEURL; ?>/User"><i class="fa fa-home"></i> PENGGUNA <span class=""></span></a></li>
+								<li><a href="<?=BASEURL; ?>/Pembimbing"><i class="fa fa-edit"></i> GURU PEMBIMBING <span class=""></span></a></li>
 								<li><a href="<?=BASEURL; ?>/KepalaSekolah"><i class="fa fa-desktop"></i> KEPALA SEKOLAH <span class=""></span></a></li>
-								<li><a href="<?=BASEURL; ?>/siswa"><i class="fa fa-table"></i> SISWA <span class=""></span></a></li>
-								<li><a href="<?=BASEURL; ?>/ekstrakurikuler"><i class="fa fa-bar-chart-o"></i> EKSTRAKURIKULER <span class=""></span></a></li>
-								<li><a href="<?=BASEURL; ?>/prestasi"><i class="fa fa-clone"></i> PRESTASI <span class=""></span></a></li>
+								<li><a href="<?=BASEURL; ?>/Siswa"><i class="fa fa-table"></i> SISWA <span class=""></span></a></li>
+								<li><a href="<?=BASEURL; ?>/Ekstrakurikuler"><i class="fa fa-bar-chart-o"></i> EKSTRAKURIKULER <span class=""></span></a></li>
+								<li><a href="<?=BASEURL; ?>/Prestasi"><i class="fa fa-clone"></i> PRESTASI <span class=""></span></a></li>
 							</ul>
 						</div>
 						<div class="menu_section">

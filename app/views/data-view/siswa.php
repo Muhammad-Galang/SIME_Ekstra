@@ -59,7 +59,7 @@
       </div>
       <div class="modal-body">
         <!-- Header-Body -->
-        <form action="<?=BASEURL; ?>/siswa/tambah" method="POST">
+        <form action="<?=BASEURL; ?>/Siswa/tambah" method="POST">
          <div class="form-group">
           <label for="id_memilih_ekskul">ID MEMILIH EKSKUL</label>
           <input type="number" class="form-control" id="id_memilih_ekskul" autocomplete="off" name="id_memilih_ekskul">

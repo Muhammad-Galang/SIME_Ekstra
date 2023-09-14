@@ -57,7 +57,7 @@
       </div>
       <div class="modal-body">
         <!-- Header-Body -->
-        <form action="<?=BASEURL; ?>/kepalasekolah/tambah" method="POST">
+        <form action="<?=BASEURL; ?>/Kepalasekolah/tambah" method="POST">
 
           <div class="form-group">
             <label for="id_pengguna">ID PENGGUNA</label>

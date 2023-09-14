@@ -3,7 +3,7 @@
 <div class="col-md-12 col-sm-12 ">
   <div class="x_panel">
     <div class="x_title">
-      <h2>Responsive example<small>Users</small></h2>
+      <h2>Data Prestasi<small>Users</small></h2>
       <ul class="nav navbar-right panel_toolbox">
         <li><a><button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#FormModal">
           Tambah Data
@@ -39,9 +39,8 @@
                   <td><?= $prs['Deskripsi']; ?></td>
                   <td><?= $prs['Foto']; ?></td>
                   <td>
-                    <a href="<?=BASEURL; ?>/Prestasi/hapus/<?=$prs['Id_Pengguna']; ?>" float-end ml-1" onclick="return confirm('Yakin?');"><button type="button" class="btn btn-danger">Hapus</button></a>
-
-                    <a href="<?=BASEURL; ?>/Prestasi/edit/<?=$keps['Id_Kepala']; ?>"><button type="button" class="btn btn-warning">Edit</button></a>
+                    <a href="<?=BASEURL; ?>/Prestasi/hapus/<?=$prs['Id_Pengguna']; ?>" onclick="return confirm('yakin?')";><div class="btn btn-danger fa fa-trash "></div></a>
+                    <a href="<?=BASEURL; ?>/siswa/edit/<?=$Ds['Id_Pengguna']; ?>" data-bs-toggle="modal" data-bs-target="#FormModal" class="btn btn-warning fa fa-edit tampilModalUbah"></a> 
                   </td>
                 </tr>
               <?php endforeach; ?>

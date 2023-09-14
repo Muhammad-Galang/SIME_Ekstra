@@ -36,8 +36,8 @@
                   <td><?= $De['Misi_Ekskul']; ?></td>
                   <td><?= $De['Logo_Ekskul']; ?></td>
                   <td>
-                    <a href="<?=BASEURL; ?>/ekstrakurikuler/hapus/<?=$De['Id_Ekskul'];?>" onclick="return confirm('yakin?')";><button type="button" class="btn btn-danger">Hapus</button></a>
-                    <a href="<?=BASEURL; ?>/ekstrakurikuler/edit/<?=$De['Id_Ekskul']; ?>" ><button type="button" class="btn btn-warning">Edit</button></a>
+                    <a href="<?=BASEURL; ?>/ekstrakurikuler/hapus/<?=$De['Id_Ekskul'];?>" onclick="return confirm('yakin?')";><div class="btn btn-danger fa fa-trash "></div></a>
+                    <a href="<?=BASEURL; ?>/ekstrakurikuler/edit/<?=$De['Id_Ekskul']; ?>" data-bs-toggle="modal" data-bs-target="#FormModal" class="btn btn-warning fa fa-edit tampilModalUbah"></a> 
                   </td>
                 </tr>
               <?php endforeach; ?>
@@ -61,7 +61,7 @@
       </div>
       <div class="modal-body">
         <!-- Header-Body -->
-        <form action="<?=BASEURL; ?>/ekstrakurikuler/tambah" method="POST">
+        <form action="<?=BASEURL; ?>/Ekstrakurikuler/tambah" method="POST">
          <div class="form-group">
           <label for="nama_ekskul">NAMA EKSKUL</label>
           <input type="text" class="form-control" id="nama_ekskul" autocomplete="off" name="nama_ekskul">

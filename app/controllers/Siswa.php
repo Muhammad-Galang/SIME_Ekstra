@@ -16,7 +16,7 @@ class Siswa extends Controller{
 	public function tambah()
 	{
 		if($this->model('SiswaModel')->TambahDataSiswa($_POST) > 0){
-			header('Location: ' . BASEURL . '/siswa');
+			header('Location: ' . BASEURL . '/Siswa');
 			exit;
 		}
 	}
