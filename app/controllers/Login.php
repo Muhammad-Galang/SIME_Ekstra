@@ -7,7 +7,7 @@ class Login extends Controller{
 	public function index()
 	{
 		$data['title'] = 'Halaman Login';
-		$this->view('landing-page/Login', $data);
+		$this->view('landing-page/login', $data);
 	}
 
 	public function ProsesLogin() {

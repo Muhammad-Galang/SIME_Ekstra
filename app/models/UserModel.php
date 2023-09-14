@@ -21,7 +21,7 @@ class UserModel {
 
 	public function TambahDataUser($data)
 	{
-		$query =  "INSERT INTO tbl_user (Nama_Lengkap,Nama_Pengguna,Nomer_Induk,Tempat_Lahir,Tanggal_Lahir,Agama,Foto_Profil,Level_Pengguna,Kelas,Alamat,Kata_Sandi) VALUES (:Nama_Lengkap,:Nama_Pengguna,:Nomer_Induk,:Tempat_Lahir,:Tanggal_Lahir,:Agama,:Foto_Profil,:Level_Pengguna,:Kelas,:Alamat,:Kata_Sandi)";
+		$query =  'INSERT INTO ' . $this->table . ' (Nama_Lengkap,Nama_Pengguna,Nomer_Induk,Tempat_Lahir,Tanggal_Lahir,Agama,Foto_Profil,Level_Pengguna,Kelas,Alamat,Kata_Sandi) VALUES (:Nama_Lengkap,:Nama_Pengguna,:Nomer_Induk,:Tempat_Lahir,:Tanggal_Lahir,:Agama,:Foto_Profil,:Level_Pengguna,:Kelas,:Alamat,:Kata_Sandi)';
 
 		$this->db->query($query);
 		$this->db->bind('Nama_Lengkap',$data['nama_lengkap']);

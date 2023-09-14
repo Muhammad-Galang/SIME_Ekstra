@@ -1,6 +1,6 @@
 <?php 
 
-define('BASEURL', 'http://localhost/PROGRAM/SIMANEK - develop/public');
+define('BASEURL', 'http://localhost/PROGRAM/Web-Sime%20-%20using/public');
 
 //DB
 define('DB_HOST', 'localhost');

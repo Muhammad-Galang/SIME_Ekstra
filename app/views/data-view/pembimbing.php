@@ -23,7 +23,7 @@
                 <th>Id Pengguna</th>
                 <th>Tahun</th>
                 <th>Tanggal  Terdata</th>
-                <th></th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -34,9 +34,9 @@
                   <td><?=$d_p['Tahun']; ?></td>
                   <td><?=$d_p['Tanggal_Terdata']; ?></td>
                   <td>
-                    <a href="<?=BASEURL; ?>/pembimbing/hapus/<?=$d_p['Id_Pembimbing']; ?>" onclick="return confirm('yakin?')";><button type="button" class="btn btn-danger">Hapus</button></a>
+                    <a href="<?=BASEURL; ?>/pembimbing/hapus/<?=$d_p['Id_Pembimbing']; ?>" onclick="return confirm('yakin?')";><div class="btn btn-danger fa fa-trash "></div></a>
 
-                    <a href="<?=BASEURL; ?>/user/edit/<?=$d_p['Id_Pembimbing']; ?>" ><button type="button" class="btn btn-warning">Edit</button></a>
+                    <a href="<?=BASEURL; ?>/user/edit/<?=$d_p['Id_Pembimbing']; ?>" data-bs-toggle="modal" data-bs-target="#FormModal" class="btn btn-warning fa fa-edit tampilModalUbah"></a> 
                   </td>
                 </tr>
               <?php endforeach; ?>

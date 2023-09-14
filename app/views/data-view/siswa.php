@@ -36,8 +36,9 @@
                   <td><?= $Ds['Tahun'];?></td>
                   <td><?= $Ds['Tanggal_Terdata'];?></td>
                   <td>
-                    <a href="<?=BASEURL; ?>/siswa/hapus/<?=$Ds['Id_Memilih_Ekskul'];?>" onclick="return confirm('yakin?')";><button type="button" class="btn btn-danger">Hapus</button></a>
-                    <a href="<?=BASEURL; ?>/siswa/edit/<?=$Ds['Id_Pengguna']; ?>" ><button type="button" class="btn btn-warning">Edit</button></a>
+                    <!-- Button Update & Delete -->
+                    <a href="<?=BASEURL; ?>/siswa/hapus/<?=$Ds['Id_Memilih_Ekskul'];?>" onclick="return confirm('yakin?')";><div class="btn btn-danger fa fa-trash "></div></a>
+                    <a href="<?=BASEURL; ?>/siswa/edit/<?=$Ds['Id_Pengguna']; ?>" data-bs-toggle="modal" data-bs-target="#FormModal" class="btn btn-warning fa fa-edit tampilModalUbah"></a> 
                   </td>
                 </tr>
               <?php endforeach; ?>                
