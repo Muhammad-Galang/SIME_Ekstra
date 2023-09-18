@@ -9,16 +9,25 @@ class KepalaSekolah extends Controller{
 		$data['judul'] = "Halaman Kepala Sekolah";
 		$data['KPS'] = $this->model('KepalaSekolahModel')->getAllKepsek();
 		$this->view('data-view/templates/Header-Index',$data);
-		$this->view('data-view/kepala-sekolah',$data);
+		$this->view('data-view/kepala_sekolah/kepala-sekolah',$data);
 		$this->view('data-view/templates/Footer-Index');
 	}
 
 	public function tambah()
 	{
-		if($this->model('KepalaSekolahModel')->TambahDataKepsek($_POST) > 0){
-			header('Location: ' . BASEURL . '/KepalaSekolah');
-			exit;
-		}
+		$data['judul'] = "Halaman Kepala Sekolah";
+		$this->view('data-view/templates/Header-Index',$data);
+		$this->view('data-view//kepala_sekolah/kepala-sekolah_add',$data);
+		$this->view('data-view/templates/Footer-Index');	
+	}
+
+	public function edit($id)
+	{
+		$data['judul'] = "Halaman Pengguna";
+		// $data['Data_Get'] = $this->model('KepalaSekolahModel')->getUserById($id);
+		$this->view('data-view/templates/Header-Index',$data);
+		$this->view('data-view/kepala_sekolah/kepala-sekolah_edit',$data);
+		$this->view('data-view/templates/Footer-Index');
 	}
 
 	public function hapus($id_pengguna)

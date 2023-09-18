@@ -37,6 +37,7 @@
                   <td><?= $De['Logo_Ekskul']; ?></td>
                   <td>
                     <a href="<?=BASEURL; ?>/ekstrakurikuler/hapus/<?=$De['Id_Ekskul'];?>" onclick="return confirm('yakin?')";><div class="btn btn-danger fa fa-trash "></div></a>
+                    
                     <a href="<?=BASEURL; ?>/ekstrakurikuler/edit/<?=$De['Id_Ekskul']; ?>" data-bs-toggle="modal" data-bs-target="#FormModal" class="btn btn-warning fa fa-edit tampilModalUbah"></a> 
                   </td>
                 </tr>

@@ -23,11 +23,11 @@ class SiswaModel {
 		$query = 'INSERT INTO ' . $this->table . ' (Id_Memilih_Ekskul, Id_Pengguna,Id_Ekskul,Tahun,Tanggal_Terdata) VALUES (:Id_Memilih_Ekskul, :Id_Pengguna, :Id_Ekskul, :Tahun, :Tanggal_Terdata)';
 
 		$this->db->query($query);
-		$this->db->bind('Id_Memilih_Ekskul',$data['id_memilih_ekskul']);
-		$this->db->bind('Id_Pengguna',$data['id_pengguna']);
-		$this->db->bind('Id_Ekskul',$data['id_ekskul']);
-		$this->db->bind('Tahun',$data['tahun']);
-		$this->db->bind('Tanggal_Terdata',$data['tanggal_terdata']);
+		$this->db->bind('Id_Memilih_Ekskul',htmlspecialchars($data['id_memilih_ekskul']));
+		$this->db->bind('Id_Pengguna',htmlspecialchars($data['id_pengguna']));
+		$this->db->bind('Id_Ekskul',htmlspecialchars($data['id_ekskul']));
+		$this->db->bind('Tahun',htmlspecialchars($data['tahun']));
+		$this->db->bind('Tanggal_Terdata',htmlspecialchars($data['tanggal_terdata']));
 		
 		$this->db->execute();
 		return $this->db->rowCount();

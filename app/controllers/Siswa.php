@@ -9,16 +9,16 @@ class Siswa extends Controller{
 		$data['judul'] = "Halaman Siswa";
 		$data['D_S'] = $this->model('SiswaModel')->getAllSiswa();
 		$this->view('data-view/templates/Header-Index',$data);
-		$this->view('data-view/siswa',$data);
+		$this->view('data-view/siswa/siswa',$data);
 		$this->view('data-view/templates/Footer-Index');
 	}
 
 	public function tambah()
 	{
-		if($this->model('SiswaModel')->TambahDataSiswa($_POST) > 0){
-			header('Location: ' . BASEURL . '/Siswa');
-			exit;
-		}
+		$data['judul'] = "Halaman Siswa";
+		$this->view('data-view/templates/Header-Index',$data);
+		$this->view('data-view/siswa/siswa_add',$data);
+		$this->view('data-view/templates/Footer-Index');
 	}
 	
 	public function hapus($id_pengguna)

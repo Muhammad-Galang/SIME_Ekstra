@@ -93,9 +93,6 @@
                   <a class="nav-link" href="<?=BASEURL; ?>/Home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="<?= BASEURL; ?>/About"> About</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="<?= BASEURL; ?>/Service">Services</a>
                 </li>
                 <li class="nav-item">
