@@ -5,49 +5,48 @@
     <div class="x_title">
       <h2>Responsive example<small>Users</small></h2>
       <ul class="nav navbar-right panel_toolbox">
-        <!-- <li><a><button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target=" #FormModalAdd"> -->
-          <a href="<?= BASEURL; ?>/Pembimbing/tambah"><button type="button" class="btn btn-info" >
-            Tambah Data
-          </button></a>
-        </li>
-      </ul>
-      <div class="clearfix"></div>
-    </div>
-    <div class="x_content">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="card-box table-responsive">
-            <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
-              <thead>
+        <a href="<?= BASEURL; ?>/Pembimbing/tambah"><button type="button" class="btn btn-info" >
+          Tambah Data
+        </button></a>
+      </li>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+  <div class="x_content">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card-box table-responsive">
+          <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+            <thead>
+              <tr>
+                <th>Id Pembimbing</th>
+                <th>Id Pengguna</th>
+                <th>Tahun</th>
+                <th>Tanggal  Terdata</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php foreach ($data['Data_All'] as $row): ?>
                 <tr>
-                  <th>Id Pembimbing</th>
-                  <th>Id Pengguna</th>
-                  <th>Tahun</th>
-                  <th>Tanggal  Terdata</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <?php foreach ($data['Data_All'] as $row): ?>
-                  <tr>
-                    <td><?=$row['Id_Pembimbing']; ?></td>
-                    <td><?=$row['Id_Pengguna']; ?></td>
-                    <td><?=$row['Tahun']; ?></td>
-                    <td><?=$row['Tanggal_Terdata']; ?></td>
-                    <td>
-                      <a href="<?=BASEURL; ?>/Pembimbing/hapus/<?=$row['Id_Pembimbing']; ?>" onclick="return confirm('yakin?')";><div class="btn btn-danger fa fa-trash" title="Delete Data"></div></a>
+                  <td><?=$row['Id_Pembimbing']; ?></td>
+                  <td><?=$row['Id_Pengguna']; ?></td>
+                  <td><?=$row['Tahun']; ?></td>
+                  <td><?=$row['Tanggal_Terdata']; ?></td>
+                  <td>
+                    <a href="<?=BASEURL; ?>/Pembimbing/hapus/<?=$row['Id_Pembimbing']; ?>" onclick="return confirm('yakin?')";><div class="btn btn-danger fa fa-trash" title="Delete Data"></div></a>
 
-                      <a href="<?=BASEURL; ?>/Pembimbing/edit/<?=$row['Id_Pembimbing']; ?>"><div class="btn btn-warning fa fa-edit" title="Delete Data"></div></a>
-                    </td>
-                  </tr>
-                <?php endforeach; ?>
-              </tbody>
-            </table>
-          </div>
+                    <a href="<?=BASEURL; ?>/Pembimbing/edit/<?=$row['Id_Pembimbing']; ?>"><div class="btn btn-warning fa fa-edit" title="Delete Data"></div></a>
+                  </td>
+                </tr>
+              <?php endforeach; ?>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
   </div>
+</div>
 </div>
 <!-- finish konten table -->
 

@@ -13,19 +13,13 @@
     </div>
     <div class="x_content">
 
-      <form action="<?=BASEURL; ?>/KepalaSekolah/simpanKepalaSekolah" method="post" enctype="multipart/form-data">
-        +-----------------+---------+------+-----+---------+----------------+
-        | Field           | Type    | Null | Key | Default | Extra          |
-        +-----------------+---------+------+-----+---------+----------------+
-        | Id_Kepala       | int(11) | NO   | PRI | NULL    | auto_increment |
-        | Id_Pengguna     | int(11) | YES  |     | NULL    |                |
-        | Tanggal_Terdata | date    | YES  |     | NULL    |                |
-        +-----------------+---------+------+-----+---------+----------------+
+      <form action="<?=BASEURL; ?>/KepalaSekolah/simpanKepalaSekolah" method="post" enctype="multipart/form-data">  
         <!-- <span class="section">Personal Info</span> -->
         <div class="field item form-group">
           <label class="col-form-label col-md-3 col-sm-3 label-align">Id Pengguna<span class="required">*</span></label>
           <div class="col-md-6 col-sm-6">
-            <input class="form-control" name="id_pengguna" type="number" ></div>
+            <?php $unik_kode_produk = 'PROD_' . uniqid() . rand(100, 999); ?>
+            <input class="form-control" name="id_pengguna" type="number" value="<?= "$unik_kode_produk"; ?>" disabled=""></div>
           </div>
 
           <div class="field item form-group">

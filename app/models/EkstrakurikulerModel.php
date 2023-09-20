@@ -18,10 +18,16 @@ class EkstrakurikulerModel {
 		return $this->db->resultSet();
 	}
 
+	public function getAllEkstraById($data)
+	{
+		$this->db->query('SELECT * FROM ' . $this->table . ' WHERE Id_Ekskul =:Id_Ekskul');
+		$this->db->bind('Id_Ekskul',$data);
+		return $this->db->single();
+	}
+
 	public function TambahDataEkstrakurikuler($data)
 	{			
 		$query = 'INSERT INTO ' . $this->table . ' (Nama_Ekskul, Visi_Ekskul, Misi_Ekskul, Logo_Ekskul) VALUES (:Nama_Ekskul, :Visi_Ekskul, :Misi_Ekskul, :Logo_Ekskul)';
-
 
 		$this->db->query($query);
 		$this->db->bind('Nama_Ekskul',$data['nama_ekskul']);
@@ -31,9 +37,20 @@ class EkstrakurikulerModel {
 
 		$this->db->execute();
 		return $this->db->rowCount();
+	}
 
+	public function ubahDataEkskul($data)
+	{
+		$query = ' UPDATE ' . $this->table . ' SET Nama_Ekskul=:Nama_Ekskul, Visi_Ekskul=:Visi_Ekskul, Misi_Ekskul=:Misi_Ekskul, Logo_Ekskul=:Logo_Ekskul WHERE Id_Ekskul=:Id_Ekskul';
 
-
+		$this->db->query($query);
+		$this->db->bind('Id_Ekskul', $data['Id_Ekskul']);
+		$this->db->bind('Nama_Ekskul', $data['nama_ekskul']);
+		$this->db->bind('Visi_Ekskul', $data['visi_ekskul']);
+		$this->db->bind('Misi_Ekskul', $data['misi_ekskul']);
+		$this->db->bind('Logo_Ekskul', $data['logo_ekskul']);
+		$this->db->execute();
+		return $this->db->rowCount();
 	}
 
 	public function HapusDataEkstrakurikuler($id_ekskul)

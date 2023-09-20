@@ -20,6 +20,7 @@ class KepalaSekolahModel {
 
 	public function TambahDataKepsek($data)
 	{		
+
 		$query = 'INSERT INTO ' . $this->table . ' (Id_Pengguna, Tanggal_Terdata) VALUES (:Id_Pengguna, :Tanggal_Terdata)';
 
 		$this->db->query($query);
