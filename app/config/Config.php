@@ -1,6 +1,6 @@
 <?php 
 
-define('BASEURL', 'http://localhost/PROGRAM/Web-Sime%20-%20using/public');
+define('BASEURL', 'http://localhost/PROGRAM/Web-Sime%20-%20develop/public');
 
 //DB
 define('DB_HOST', 'localhost');

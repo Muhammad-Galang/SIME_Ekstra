@@ -38,10 +38,28 @@
         </div>
 
 
+        <?php 
+
+        function acak_angkafuruf($panjang=10) /*<= sesuai banyaknya nilai */
+        {
+          $karakter = '0123456789ABCDEFGHIJKLMNOPQRSTUVWEYZ';
+          $data = 0;
+
+          for($i=0; $i<$panjang; $i++)
+          {
+            $rand = rand(0,strlen($karakter)-1);
+            $data .= $karakter[$rand];
+          }
+          return $data;
+        }
+        ?>
+
         <div class="field item form-group">
           <label class="col-form-label col-md-3 col-sm-3 label-align" for="nomer_induk">NOMER INDUK</label>
           <div class="col-md-6 col-sm-6">
-            <input type="number" class="form-control" id="nomer_induk" autocomplete="off" name="nomer_induk">
+            <!-- <input type="number" class="form-control" id="nomer_induk" autocomplete="off" name="nomer_induk"> -->
+
+            <input type="text" class="form-control" id="nomer_induk" autocomplete="off" name="nomer_induk" value="<?= acak_angkafuruf(10); ?>" readonly>
           </div>
         </div>
 

@@ -4,13 +4,13 @@
  */
 class User extends Controller{
 	
-	public function __construct()
-	{	
-		if($_SESSION['session_login'] != 'sudah_login') {
-			header('location: '. BASEURL . '/login');
-			exit;
-		}
-	}
+	// public function __construct()
+	// {	
+	// 	if($_SESSION['session_login'] != 'sudah_login') {
+	// 		header('location: '. BASEURL . '/login');
+	// 		exit;
+	// 	}
+	// }
 
 	public function index()
 	{

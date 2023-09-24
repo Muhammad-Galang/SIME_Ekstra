@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
 </head>
-<link rel="stylesheet" type="text/css" href="<?= BASEURL; ?>/landing-page/css/style-login.css">
+<link rel="stylesheet" type="text/css" href="<?= BASEURL; ?>/landing-page/dist/css/style-login.css">
 <body>
-  
+
   <div class="wrapper">
     <?php
     Flasher::message();

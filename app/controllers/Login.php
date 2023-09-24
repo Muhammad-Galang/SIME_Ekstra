@@ -10,6 +10,11 @@ class Login extends Controller{
 		$this->view('landing-page/login', $data);
 	}
 
+	public function Captcha()
+	{
+		$this->view('landing-page/captcha');
+	}
+
 	public function ProsesLogin() {
 		
 		if($row = $this->model('LoginModel')->checkLogin($_POST) > 0 ) {
@@ -18,7 +23,7 @@ class Login extends Controller{
 			$_SESSION['Password'] = $row['password'];
 			$_SESSION['session_login'] = 'sudah_login'; 
 
-			header('location: '. BASEURL . '/User');
+			header('location: '. BASEURL . '/Login/Captcha');
 		} else {
 			Flasher::setMessage('Username / Password','salah.','danger');
 			header('location: '. BASEURL . '/login');
