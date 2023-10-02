@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
 </head>
+<!-- RECAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<!-- END RECAPTCHA -->
 <link rel="stylesheet" type="text/css" href="<?= BASEURL; ?>/landing-page/dist/css/style-login.css">
 <body>
 
@@ -25,13 +29,19 @@
         <div class="slider-tab"></div>
       </div>
       <div class="form-inner">
-        <form action="<?=BASEURL; ?>/Login/ProsesLogin" class="login"  method="POST">
+        <form action="<?=BASEURL; ?>/Login/ProsesLogin" class="login" id="demo-form"  method="POST">
           <div class="field">
             <input type="text" placeholder="Masukkan Username" required name="nama_pengguna" autocomplete="off">
           </div>
           <div class="field">
             <input type="password" placeholder="Masukkan Password" required name="kata_sandi" autocomplete="off">
           </div>
+          <!-- Kode recaptcha -->
+          <br>
+          <div class="g-recaptcha" data-sitekey="6LcvumsoAAAAAL5u8gTI3bkk-Of8tapAxOoWEY7Y"></div>
+          <br>
+          <!-- end syntax -->
+
           <div class="pass-link"><a href="#">Forgot password?</a></div>
           <div class="field btn">
             <div class="btn-layer"></div>
@@ -57,24 +67,38 @@
       </div>
     </div>
   </div>
+
+  <!-- js - captcha -->
   <script type="text/javascript">
-    const loginText = document.querySelector(".title-text .login");
-    const loginForm = document.querySelector("form.login");
-    const loginBtn = document.querySelector("label.login");
-    const signupBtn = document.querySelector("label.signup");
-    const signupLink = document.querySelector("form .signup-link a");
-    signupBtn.onclick = (()=>{
-      loginForm.style.marginLeft = "-50%";
-      loginText.style.marginLeft = "-50%";
-    });
-    loginBtn.onclick = (()=>{
-      loginForm.style.marginLeft = "0%";
-      loginText.style.marginLeft = "0%";
-    });
-    signupLink.onclick = (()=>{
-      signupBtn.click();
-      return false;
-    });
+    var onloadCallback = function() {
+      alert("grecaptcha is ready!");
+    };
   </script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+  async defer>
+</script>
+<!-- end captcha -->
+
+
+<script type="text/javascript">
+  const loginText = document.querySelector(".title-text .login");
+  const loginForm = document.querySelector("form.login");
+  const loginBtn = document.querySelector("label.login");
+  const signupBtn = document.querySelector("label.signup");
+  const signupLink = document.querySelector("form .signup-link a");
+  signupBtn.onclick = (()=>{
+    loginForm.style.marginLeft = "-50%";
+    loginText.style.marginLeft = "-50%";
+  });
+  loginBtn.onclick = (()=>{
+    loginForm.style.marginLeft = "0%";
+    loginText.style.marginLeft = "0%";
+  });
+  signupLink.onclick = (()=>{
+    signupBtn.click();
+    return false;
+  });
+</script>
 </body>
 </html>
+
