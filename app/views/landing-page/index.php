@@ -32,7 +32,7 @@
                     </div>
                     <ul class="header-links list-reset m-0">
                         <li>
-                            <a href="#"></a>
+                            <a href=" "></a>
                         </li>
                         <li>
                             <a class="button button-sm button-shadow" href="<?= BASEURL; ?>/Login">Login</a>
@@ -75,7 +75,7 @@
                             </div>
                             <h4 class="feature-title h3-mobile">Pramuka</h4>
                             <a href="<?= BASEURL; ?>/Home/JoinEkskulPramuka"> 
-                                <button class="button button-sm button-shadow" > . . . </button>
+                                <button class="button button-sm button-shadow" > DETAIL </button>
                             </a>
                         </div>
                     </div>
@@ -149,13 +149,15 @@
             <div class="features-extended-inner section-inner has-top-divider">
                 <div class="features-extended-header text-center">
                     <div class="container-sm">
-                        <h2 class="section-title mt-0">Meet Evelyn</h2>
-                        <p class="section-paragraph">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation</p>
+                        <h2 class="section-title mt-0">Pembimbing Ekstra</h2>
+                        <p class="section-paragraph"><!-- Dengannya kita bisa menambah pengetahuan mendalam dalam bidangnya dan memiliki kemampuan luar biasa dalam menyampaikan materi pelajaran dengan cara yang memotivasi dan memahami kebutuhan setiap siswa untuk mencapai kesuksesan akademis.--></p>
                     </div>
                 </div>
                 <div class="feature-extended">
                     <div class="feature-extended-image is-revealing">
-                        <svg width="480" height="360" viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg">
+                        <!-- <svg width="480" height="360" viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg"> -->
+                            <img src="<?= BASEURL;?>/landing-page/image/user01-preview.png">
+
                             <defs>
                                 <filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="dropshadow-1">
                                     <feOffset dy="16" in="SourceAlpha" result="shadowOffsetOuter"/>
@@ -177,13 +179,14 @@
                         </svg>
                     </div>
                     <div class="feature-extended-body">
-                        <h3 class="mt-0">Discover</h3>
-                        <p>Where text is visible, people tend to focus on the textual content rather than upon overall presentation</p>
+                        <h3 class="mt-0">Satejo</h3>
+                        <p>Pengajar Bulutangkis,berpengalaman selama puluhan tahun dan sering mendapat juara diajang perkampungan</p>
                     </div>
                 </div>
                 <div class="feature-extended">
                     <div class="feature-extended-image is-revealing">
-                        <svg width="480" height="360" viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg">
+                        <!-- <svg width="480" height="360" viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg"> -->
+                            <img src="<?= BASEURL;?>/landing-page/image/user01-preview.png">
                             <defs>
                                 <filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="dropshadow-2">
                                     <feOffset dy="16" in="SourceAlpha" result="shadowOffsetOuter"/>
@@ -205,13 +208,14 @@
                         </svg>
                     </div>
                     <div class="feature-extended-body">
-                        <h3 class="mt-0">Discover</h3>
-                        <p>Where text is visible, people tend to focus on the textual content rather than upon overall presentation</p>
+                        <h3 class="mt-0">Suyoto</h3>
+                        <p>Pengajar panahan,berpengalaman 10 tahun. </p>
                     </div>
                 </div>
                 <div class="feature-extended">
                     <div class="feature-extended-image is-revealing">
-                        <svg width="480" height="360" viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg">
+                        <!-- <svg width="480" height="360" viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg"> -->
+                            <img src="<?= BASEURL;?>/landing-page/image/user01-preview.png">
                             <defs>
                                 <filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="dropshadow-3">
                                     <feOffset dy="16" in="SourceAlpha" result="shadowOffsetOuter"/>
@@ -233,8 +237,8 @@
                         </svg>
                     </div>
                     <div class="feature-extended-body">
-                        <h3 class="mt-0">Discover</h3>
-                        <p>Where text is visible, people tend to focus on the textual content rather than upon overall presentation</p>
+                        <h3 class="mt-0">Suyatno</h3>
+                        <p>Pengajar badminton,ia berpengalaman selama 20 tahun dan sering ikut serta dalam ajang perlombaan</p>
                     </div>
                 </div>
             </div>
@@ -244,16 +248,19 @@
     <section class="pricing section">
         <div class="container">
             <div class="pricing-inner section-inner has-top-divider">
-                <h2 class="section-title mt-0 text-center">Pricing</h2>
+                <h2 class="section-title mt-0 text-center">Terakhir</h2>
+                <p style="text-align: center; font-size: 30px;">Saya tunggu kehadiranmu nanti di tempat latihan...ayo segera daftar kan dirimu sekarang juga!!!</p>
                 <div class="pricing-tables-wrap">
+
                     <div class="pricing-table is-revealing">
                         <div class="pricing-table-inner">
                             <div class="pricing-table-main">
                                 <div class="pricing-table-header">
-                                    <div class="pricing-table-title mt-12 mb-16 text-secondary">Lorem ipsum</div>
-                                    <div class="pricing-table-price mb-24 pb-32"><span class="pricing-table-price-currency h3">$</span><span class="pricing-table-price-amount h1">29</span></div>
+                                    <img src="<?= BASEURL;?>/landing-page/image/user01-preview.png">
+                                    <!-- <div class="pricing-table-title mt-12 mb-16 text-secondary">Lorem ipsum</div> -->
+                                    <!-- <div class="pricing-table-price mb-24 pb-32"><span class="pricing-table-price-currency h3">$</span><span class="pricing-table-price-amount h1">29</span></div> -->
                                 </div>
-                                <ul class="pricing-table-features list-reset text-xs mb-56">
+                                <!-- <ul class="pricing-table-features list-reset text-xs mb-56">
                                     <li>
                                         <span class="list-icon">
                                             <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
@@ -278,25 +285,27 @@
                                         </span>
                                         <span>Sed do eiusmod tempor cesa.</span>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
                             <div class="pricing-table-cta">
                                 <a class="button button-secondary button-block" href="#">Get started now</a>
                             </div>
                         </div>
                     </div>
+
                     <div class="pricing-table is-revealing">
                         <div class="pricing-table-inner">
                             <div class="pricing-table-main">
                                 <div class="pricing-table-header">
-                                    <div class="pricing-table-title mt-12 mb-16 text-primary">Lorem ipsum</div>
-                                    <div class="pricing-table-price mb-24 pb-32"><span class="pricing-table-price-currency h3">$</span><span class="pricing-table-price-amount h1">129</span></div>
+                                    <img src="<?= BASEURL;?>/landing-page/image/user01-preview.png">
+                                    <!-- <div class="pricing-table-title mt-12 mb-16 text-secondary">Lorem ipsum</div> -->
+                                    <!-- <div class="pricing-table-price mb-24 pb-32"><span class="pricing-table-price-currency h3">$</span><span class="pricing-table-price-amount h1">29</span></div> -->
                                 </div>
-                                <ul class="pricing-table-features list-reset text-xs mb-56">
+                                <!-- <ul class="pricing-table-features list-reset text-xs mb-56">
                                     <li>
                                         <span class="list-icon">
                                             <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
+                                                <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00C6A7" fill-rule="nonzero"/>
                                             </svg>
                                         </span>
                                         <span>Sed do eiusmod tempor cesa.</span>
@@ -304,7 +313,7 @@
                                     <li>
                                         <span class="list-icon">
                                             <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
+                                                <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00C6A7" fill-rule="nonzero"/>
                                             </svg>
                                         </span>
                                         <span>Sed do eiusmod tempor cesa.</span>
@@ -312,23 +321,15 @@
                                     <li>
                                         <span class="list-icon">
                                             <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
+                                                <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00C6A7" fill-rule="nonzero"/>
                                             </svg>
                                         </span>
                                         <span>Sed do eiusmod tempor cesa.</span>
                                     </li>
-                                    <li>
-                                        <span class="list-icon">
-                                            <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
-                                            </svg>
-                                        </span>
-                                        <span>Sed do eiusmod tempor cesa.</span>
-                                    </li>
-                                </ul>
+                                </ul> -->
                             </div>
                             <div class="pricing-table-cta">
-                                <a class="button button-primary button-block" href="#">Get started now</a>
+                                <a class="button button-secondary button-block" href="#">Get started now</a>
                             </div>
                         </div>
                     </div>
